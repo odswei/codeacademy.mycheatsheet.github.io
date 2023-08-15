@@ -3,50 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cheat Sheet</title>
+    <title>Style Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>HTML Tags</h1>
-        <p>HTML tags are used to create HTML documents and render their properties.</p>
-    </header>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Tag</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>figure</td>
-            <td>&lt;figure&gt;</td>
-            <td>The &lt;figure&gt; tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
-        </tr>
-        <tr>
-            <td>figcaption</td>
-            <td>&lt;figcaption&gt;</td>
-            <td>The &lt;figcaption&gt; tag defines a caption for a &lt;figure&gt; element.</td>
-        </tr>
-        <tr>
-            <td>video</td>
-            <td>&lt;video&gt;</td>
-            <td>The &lt;video&gt; tag is used to embed video content in a document, such as a movie clip or other video streams.</td>
-        </tr>
-        <tr>
-            <td>source</td>
-            <td>&lt;source&gt;</td>
-            <td>The &lt;source&gt; tag is used to specify multiple media resources for media elements, such as &lt;video&gt;, &lt;audio&gt;, and &lt;picture&gt;.</td>
-        </tr>
-        <tr>
-            <td>audio</td>
-            <td>&lt;audio&gt;</td>
-            <td>The &lt;audio&gt; tag is used to embed sound content in a document, such as music or other audio streams.</td>
-        </tr>
-        <tr>
-            <td>nav</td>
-            <td>&lt;nav&gt;</td>
-            <td>The &lt;nav&gt; tag defines a set of navigation links.</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1 class="title">Style Guide</h1>
+        <section>
+            <h3 class="subtitle">Colors</h3>
+            <div class="color">
+                <ul>
+                    <li class="box black"><span></span></li>
+                    <li class="box white"><span></span></li>
+                    <li class="box turquoise"><span></span></li>
+                    <li class="box red"><span></span></li>
+                    <li class="box yellow"><span></span></li>
+                    <li class="box blue"><span></span></li>
+                </ul>   
+            </div> 
+        </section>
+        <section>
+            <h3 class="subtitle">Typography</h3>
+            <table class="mb-20">
+                <tr>
+                    <td rowspan="4" colspan="2" class="letter">
+                        Aa<div><h4>Poppins</h4></div>
+                    </td>
+                    <td class="vertical-m"><strong>Bold</strong>, 60px</td>
+                    <td class="heading"><h1>H1 Heading</h1></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 48px</td>
+                    <td class="heading"><h2>H2 Heading</h2></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 60px</td>
+                    <td class="heading"><h3>H3 Heading</h3></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 36px</td>
+                    <td class="heading"><h4>H4 Heading</h4></td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="font-weight-type">
+                        <ul>
+                            <li class="font-light">Light</li>
+                            <li>Regular</li>
+                            <li class="font-bold">Bold</li>
+                        </ul>
+                    </td>
+                    <td rowspan="4" class="font-weight-type">
+                        <ul>
+                            <li class="i-poppins">Italic</li>
+                            <li>Normal</li>
+                            <li><u>Underline</u></li>
+                        </ul>
+                    </td>
+                    <td class="vertical-m"><strong>Bold</strong>, 28px</td>
+                    <td class="heading"><h5>H5 Heading</h5></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 18px</td>
+                    <td class="w-800"><h6>H6 Heading</h6></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 20px</td>
+                    <td class="w-800"><span class="button-text">Button</h6></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 18px</td>
+                    <td class="w-800"><span class="link">Link</h6></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="paragraph-style"><span>Regular, 16px</span></td>
+                    <td colspan="3">
+                        <p class="mt-20 mb-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur maxime consequatur, itaque cumque blanditiis deleniti? Nobis ratione nisi doloribus voluptates harum dicta commodi aperiam eius, ad quidem, ipsum laudantium saepe.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur maxime consequatur, itaque cumque blanditiis deleniti? Nobis ratione nisi doloribus voluptates harum dicta commodi aperiam eius, ad quidem, ipsum laudantium saepe.</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="f-CU">
+                <tr>
+                    <td rowspan="4" colspan="2" class="letter">
+                        Aa<div><h4>Cormorant Upright</h4></div>
+                    </td>
+                    <td class="vertical-m"><strong>Bold</strong>, 60px</td>
+                    <td class="heading"><h1>H1 Heading</h1></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 48px</td>
+                    <td class="heading"><h2>H2 Heading</h2></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 60px</td>
+                    <td class="heading"><h3>H3 Heading</h3></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 36px</td>
+                    <td class="heading"><h4>H4 Heading</h4></td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="font-weight-type">
+                        <ul>
+                            <li class="font-light">Light</li>
+                            <li>Regular</li>
+                            <li><strong>Bold</strong></li>
+                        </ul>
+                    </td>
+                    <td rowspan="4" class="font-weight-type">
+                        <ul>
+                            <li class="i-poppins">Italic</li>
+                            <li>Normal</li>
+                            <li><u>Underline</u></li>
+                        </ul>
+                    </td>
+                    <td class="vertical-m"><strong>Bold</strong>, 28px</td>
+                    <td class="heading"><h5>H5 Heading</h5></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 18px</td>
+                    <td class="w-800"><h6>H6 Heading</h6></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 20px</td>
+                    <td class="w-800"><span class="button-text">Button</h6></td>
+                </tr>
+                <tr>
+                    <td class="vertical-m"><strong>Bold</strong>, 18px</td>
+                    <td class="w-800"><span class="link">Link</h6></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="paragraph-style"><span>Regular, 16px</span></td>
+                    <td colspan="3">
+                        <p class="mt-20 mb-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur maxime consequatur, itaque cumque blanditiis deleniti? Nobis ratione nisi doloribus voluptates harum dicta commodi aperiam eius, ad quidem, ipsum laudantium saepe.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur maxime consequatur, itaque cumque blanditiis deleniti? Nobis ratione nisi doloribus voluptates harum dicta commodi aperiam eius, ad quidem, ipsum laudantium saepe.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
 </body>
 </html>

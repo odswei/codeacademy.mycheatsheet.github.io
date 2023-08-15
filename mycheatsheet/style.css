@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    line-height: 1.5;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: lightsalmon;
+    font-family: monospace;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+table {
+    border-spacing: 0;
+    margin: 0 auto;
+    background-color: gold;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: royalblue;
+    color: white;
+}
+
+th, td {
+    padding: 5px 10px;
+}
