@@ -57,13 +57,12 @@ main {
 #mission {
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
     height: 700px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.banner-text {
+.mission-text {
     background-color: black;
 }
 
