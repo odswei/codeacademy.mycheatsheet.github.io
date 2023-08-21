@@ -59,6 +59,7 @@
 
 .f-CU tr,  
 .f-CU tr td, 
+.f-CU tr td div,
 .f-CU h1,
 .f-CU h2,
 .f-CU h3,
@@ -71,6 +72,16 @@
 .f-CU ul li,
 .f-CU ul li u {
     font-family: 'Cormorant Upright' !important;
+}
+
+.f-CU tr,  
+.f-CU tr td, 
+.f-CU tr td span,
+.f-CU tr td p,
+.f-CU tr td strong,
+.f-CU ul li,
+.f-CU ul li u {
+    font-size: 20px;
 }
 
 h1 {
