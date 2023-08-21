@@ -130,6 +130,6 @@ main {
 
 .copyright {
     text-align: left;
-    margin-left: 20px;
+    margin: 0 20px;
     padding-bottom: 10px;
 }
