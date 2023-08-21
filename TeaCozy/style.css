@@ -5,17 +5,27 @@
 
 body {
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: 22px;
     color: seashell;
     background-color: black;
+    text-align: center;
+    line-height: 2;
     opacity: 0.9;
+    position: relative;
+    top: 70px;
 }
 
 header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
     height: 69px;
     display: flex;
-    background-color: aqua;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
 }
 
 nav ul {
@@ -29,13 +39,93 @@ nav ul li {
     margin: 0 8px;
 }
 
-.logo::before {
-    display: inline-flex;
-    content: '';
-    width: 100px;
+img.logo {
+    width: auto;
     height: 50px;
-    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid yellow;
+    margin-left: 10px;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h2, .banner h4 {
+    background-color: black;
+}
+
+.highlight {
+    margin: 60px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .card-img {
+    margin: 20px;
+    line-height: 1;
+}
+
+.gallery .card-img img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.locations {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations h2 {
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.location-cards {
+    display: flex;
+}
+
+.location-card {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    margin: 0px 20px;
+}
+
+.location-card h3, .location-card span {
+    line-height: 1;
+    padding: 24px 0;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    line-height: 1;
+    justify-content: space-around;
+}
+
+.copyright {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
