@@ -63,7 +63,7 @@ main {
     justify-content: center;
 }
 
-#mission h2, #mission h4 {
+.banner-text {
     background-color: black;
 }
 
