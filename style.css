@@ -122,18 +122,24 @@ nav {
     position: relative;
 }
 
+.banner article::before, .banner article::after {
+    position: absolute;
+    bottom: 24px;
+    transition: bottom ease 0.5s;
+}
+
+.banner article:hover:before, .banner article:hover:after{
+    bottom: 35px;
+}
+
 .banner article::before {
     content: url('./select-task.svg');
-    position: absolute;
     left: -137.5px;
-    bottom: 24px;
 }
 
 .banner article::after {
     content: url('./task-selected.svg');
-    position: absolute;
     right: -137.5px;
-    bottom: 24px;
 }
 
 .banner h1, .banner h1 em {
