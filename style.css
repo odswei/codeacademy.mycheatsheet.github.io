@@ -69,21 +69,23 @@ nav {
     font-weight: 700;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .grey {
-    background-color: #F4F5F6;
+    background-color: rgb(244, 245, 246);
 }
 
 .text-dark-grey {
-    color: #9D9DA0;
+    color: rgb(157, 157, 160);
 }
 
 .purple {
     background: rgb(98, 118, 255);
     background: linear-gradient(160deg, rgb(139, 154, 252) 0%, rgb(106, 126, 255) 35%, rgba(48,71,239,1) 100%);
     box-shadow: 0px 3px 3px rgba(48,71,239, 0.3);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .purple-outline {
