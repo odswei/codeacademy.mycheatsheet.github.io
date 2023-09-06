@@ -1,34 +1,47 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrioSort</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sylonc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <div class="logo"></div>
-        <div class="cta-btn">
-            <a href="#" class="btn grey">Sign in</a>
-            <a href="#" class="btn purple">Create Account</a>
-        </div>
-    </nav>
-    <main>
-        <div class="banner">
-            <article>
-                <h1>
-                    Boost Your Team <em>Productivity</em> by taking better decisions
-                </h1>
-                <p class="text-dark-grey">
-                    Prioitize your tasks by taking simple and easy decisions
-                </p>
-                <div class="cta-btn">
-                    <a href="#" class="btn purple">Get Started</a>
-                    <a href="#" class="btn purple-outline">Learn More</a>
+    <div class="notice">We couldn’t find an account matching the username and password you entered. Please check your username and password and try again.</div>
+    <div class="row">
+        <div class="col-1">
+            <div class="container">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <div class="textH2 mt-10 title">Log in to your Account</div>
+                <div class="mb-30">Welcome back!</div>
+                <div class="input-icon-wrap">
+                    <span class="input-icon input-email-icon"></span>
+                    <input type="email" class="input-with-icon" id="email" placeholder="Email">
                 </div>
-            </article>
+                <div class="input-icon-wrap">
+                    <span class="input-icon input-lock-icon"></span>
+                    <input type="password" class="input-with-icon" id="password" placeholder="Password">
+                </div>
+                <div class="remember-forgot">
+                    <div class="rememberme">
+                        <input type="checkbox" name="remmberme" id="rememberme" checked>
+                        <label for="rememberme">Remember me</label>
+                    </div>
+                    <div class="blue-b-text forgot">
+                        <a href="/">Forgot Password?</a>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">Log in</button>
+                <div class="mt-30 account">Don't have an account? <span class="blue-b-text create-account"><a href="/">Create an account</a></span></div>
+            </div>
         </div>
-    </main>
+        <div class="col-2">
+        </div>
+    </div>
 </body>
 </html>
