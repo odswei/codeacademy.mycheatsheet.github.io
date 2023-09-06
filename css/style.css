@@ -191,7 +191,7 @@ input[type="email" i] {
     }
 
     .logo {
-        content: url("/Images/logo-mobile.png");
+        content: url("/images/logo-mobile.png");
         height: 86px !important;
         display: block;
         margin: auto;
