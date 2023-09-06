@@ -16,26 +16,6 @@ html body {
     margin: 16px 0px 8px 0px;
 }
 
-.input-email-icon {
-    content: url("/Images/mail.png");
-}
-
-.input-lock-icon {
-    content: url("/Images/lock.png");
-}
-
-.input-user-icon {
-    content: url("/Images/user.png");
-}
-
-.input-email-icon,
-.input-lock-icon,
-.input-user-icon {
-    width: 18px;
-    height: auto;
-    opacity: 0.5;
-}
-
 .input-icon-wrap,
 .input-with-icon,
 .login-button {
@@ -89,7 +69,8 @@ input[type="text"] {
 #email::-webkit-input-placeholder,
 #password::-webkit-input-placeholder,
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
     font: 16px 'Poppins', sans-serif;
 }
 
@@ -366,7 +347,7 @@ input[type="email" i] {
     top: 0;
     left: 0;
     right: 0;
-    line-height: 20px;
+    line-height: 28px;
     width: 100%;
     background-color: #ffae42;
     text-align: center;
@@ -469,3 +450,8 @@ input[type="email" i] {
     -webkit-text-stroke: 0.5p;
 }
 
+.back-to-login a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
