@@ -7,21 +7,19 @@
     <title>Sylonc</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <link href="css/timeline.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  href="css/swiper-bundle.min.css"
 />
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+<script src="/js/aos.js"></script>
+<script src="/js/swiper-bundle.min.js" defer></script>
 </head>
 <style>
   html, body{
@@ -74,7 +72,7 @@
     <div class="portfolio">
     <div class="row">
         <div class="col-1 abstract" >
-            <div>
+            <div class="intro">
                 <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
                 <div class="text-animate" id="col1">
                     <h1 class="mt-10">Hi! My name is <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
@@ -136,7 +134,7 @@
  </div>
  <div data-aos="fade-up"
      data-aos-anchor-placement="top-center">
-     <div class="text-center container" id="projects">
+     <div class="text-center" id="projects">
       <h1>Projects</h1>
       <div>
     <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
@@ -157,21 +155,12 @@
         window.addEventListener('scroll', function() {
             var scrollHeight = window.scrollY;
             var div = document.getElementById('col2');
-            var div2 = document.getElementById('col1');
-            var div3 = document.getElementById('wrapper');
-            var div4 = document.getElementById('experience');
-            var div5 = document.getElementById('projects');
-            var div6 = document.getElementsByClassName('portfolio');
             div.style.transform = 'translateX(' + (-scrollHeight) + 'px)';
-            // div2.style.transform = 'translateY(' + (-$(window).scrollTop())+ 'px)';
-            // // div3.style.transform = 'translateY(' + (scrollHeight) + 'px)';
-            // div4.style.transform = 'translateY(' + (-$(window).scrollTop()+100)+ 'px)';
-            // div5.style.transform = 'translateY(' + (-$(window).scrollTop()+100)+ 'px)';
         });
 </script>
     <script src="/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="/js/three.min.js"></script>
+    <script src="/js/vanta.birds.min.js"></script>
     <script>
     VANTA.BIRDS({
     el: ".col-2.abstract",
