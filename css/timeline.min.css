@@ -280,7 +280,6 @@
     transform: translateY(-50%);
     top: 50%;
     width: 40px;
-    z-index: 10
 }
 
 .timeline-nav-button:disabled {

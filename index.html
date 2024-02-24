@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="css/timeline.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,8 +23,9 @@
 </head>
 <style>
   html, body{
-    overflow-y: scroll!important;
-    height: 2000px!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 2000px;
     width: 100vw;
   }
     swiper-container {
@@ -93,56 +95,63 @@
         </div>
         <div class="col-2 abstract" id="col2">
         </div>
-   </div>
-   <div class="text-center container" id="experience">
-    <h1>Experiences</h1>
-    <div class="timeline">
-        <div class="timeline__wrap">
-          <div class="timeline__items">
-            <div class="timeline__item">
-                <div class="timeline__content">
-                  <span class="textH4">Aug, 2023 - Current</span>
-                  <p>Freelance - Upwork<br>Html slicing & .Net</p>
-                </div>
-              </div>
-            <div class="timeline__item">
-                <div class="timeline__content">
-                  <span class="textH4">March, 2023 - March, 2023</span>
-                  <p>PT Xtremax Teknologi Indonesia<br>Obtained certification in Sitecore 10 .NET Developer</p>
-                </div>
-              </div>
-            <div class="timeline__item">
+   </div>  <div
+   data-aos="fade-up"
+ >
+ <div class="text-center container" id="experience">
+  <h1>Experiences</h1>
+  <div class="timeline">
+      <div class="timeline__wrap">
+        <div class="timeline__items">
+          <div class="timeline__item">
               <div class="timeline__content">
-                <span class="textH4">Sep, 2021 - Current</span>
-                <p>PT Xtremax Teknologi Indonesia<br>Software Developer-Backend</p>
+                <span class="textH4">Aug, 2023 - Current</span>
+                <p>Freelance - Upwork<br>Html slicing & .Net</p>
               </div>
             </div>
-              <div class="timeline__item">
-                <div class="timeline__content">
-                  <span class="textH4">Aug, 2018 - Sep, 2021</span>
-                  <p>PT Kahatex<br>Marketing</p>
-                </div>
+          <div class="timeline__item">
+              <div class="timeline__content">
+                <span class="textH4">March, 2023 - March, 2023</span>
+                <p>PT Xtremax Teknologi Indonesia<br>Obtained certification in Sitecore 10 .NET Developer</p>
               </div>
+            </div>
+          <div class="timeline__item">
+            <div class="timeline__content">
+              <span class="textH4">Sep, 2021 - Current</span>
+              <p>PT Xtremax Teknologi Indonesia<br>Software Developer-Backend</p>
+            </div>
           </div>
+            <div class="timeline__item">
+              <div class="timeline__content">
+                <span class="textH4">Aug, 2018 - Sep, 2021</span>
+                <p>PT Kahatex<br>Marketing</p>
+              </div>
+            </div>
         </div>
       </div>
-   </div>
-      <div class="text-center container">
-    <h1>Projects</h1>
-    <div>
-  <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
-    speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
-    <div slot="container-start" class="parallax-bg"
-       data-swiper-parallax="-23%"></div>
-    <swiper-slide style="background-image: url('/images/LR.jpg');height: auto;background-size: cover;color: rgb(255, 255, 255);height: 300px;width: 400px;">
-        <a href="login.html" style="text-decoration: none;color: #fff;">
-      <div class="title" data-swiper-parallax="-300">Html Slicing</div>
-      <div class="subtitle" data-swiper-parallax="-200">Responsive Login & Register Template</div></a>
-    </swiper-slide>
-  </swiper-container>
     </div>
-   </div>
+ </div>
+ </div>
+ <div data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+     <div class="text-center container" id="projects">
+      <h1>Projects</h1>
+      <div>
+    <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+      speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+      <div slot="container-start" class="parallax-bg"
+         data-swiper-parallax="-23%"></div>
+      <swiper-slide style="background-image: url('/images/LR.jpg');height: auto;background-size: cover;color: rgb(255, 255, 255);height: 300px;width: 400px;">
+          <a href="login.html" style="text-decoration: none;color: #fff;">
+        <div class="title" data-swiper-parallax="-300">Html Slicing</div>
+        <div class="subtitle" data-swiper-parallax="-200">Responsive Login & Register Template</div></a>
+      </swiper-slide>
+    </swiper-container>
+      </div>
+     </div>
 </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
    <script>
         window.addEventListener('scroll', function() {
@@ -151,11 +160,13 @@
             var div2 = document.getElementById('col1');
             var div3 = document.getElementById('wrapper');
             var div4 = document.getElementById('experience');
-            div.style.transform = 'translateX(' + (-scrollHeight*2) + 'px)';
-            div2.style.transform = 'translateY(' + (-$(window).scrollTop())+ 'px)';
-            div3.style.transform = 'translateY(' + (scrollHeight) + 'px)';
-            div2.style.opacity = 1 - $(window).scrollTop() / 20000;
-            div3.style.opacity = 1 - $(window).scrollTop() / 150;
+            var div5 = document.getElementById('projects');
+            var div6 = document.getElementsByClassName('portfolio');
+            div.style.transform = 'translateX(' + (-scrollHeight) + 'px)';
+            // div2.style.transform = 'translateY(' + (-$(window).scrollTop())+ 'px)';
+            // // div3.style.transform = 'translateY(' + (scrollHeight) + 'px)';
+            // div4.style.transform = 'translateY(' + (-$(window).scrollTop()+100)+ 'px)';
+            // div5.style.transform = 'translateY(' + (-$(window).scrollTop()+100)+ 'px)';
         });
 </script>
     <script src="/js/app.js"></script>
@@ -178,6 +189,9 @@
     <script src="js/timeline.min.js"></script>
     <script>
         $('.timeline').timeline();
+    </script>
+    <script>
+      AOS.init();
     </script>
 </body>
 </html>

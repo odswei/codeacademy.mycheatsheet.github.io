@@ -788,11 +788,23 @@ input[type="email" i] {
     padding: 80px;
 }
 
+/* #col1{
+    display: block;
+    position: relative;
+}
+
 #experience{
     width: 800px;
     margin: 0 auto;
     padding-top: -80px;
+    display: block;
+    position: relative;
 }
+
+#project{
+    display: block;
+    position: relative;
+} */
 
 .swiper-slide-visible::before {
     content: "";
