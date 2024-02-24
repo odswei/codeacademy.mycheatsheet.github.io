@@ -11,18 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="css/timeline.min.css" rel="stylesheet" />
-    <link href="css/aos.css" rel="stylesheet">
     <link
   rel="stylesheet"
-  href="css/swiper-bundle.min.css"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-<script src="/js/swiper-bundle.min.js"></script>
-<script src="/js/aos.js"></script>
-<script src="/js/three.min.js"></script>
-<script src="/js/vanta.birds.min.js"></script>
-<script src="js/timeline.min.js"></script>
 </head>
 <style>
   html, body{
@@ -137,7 +132,7 @@
  </div>
  <div data-aos="fade-up"
      data-aos-anchor-placement="top-center">
-     <div class="text-center" id="projects">
+     <div class="text-center container" id="projects">
       <h1>Projects</h1>
       <div>
     <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
@@ -154,15 +149,20 @@
      </div>
 </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
    <script>
         window.addEventListener('scroll', function() {
             var scrollHeight = window.scrollY;
             var div = document.getElementById('col2');
-            div.style.transform = 'translateX(' + (-scrollHeight) + 'px)';
+            var div2 = document.getElementById('col1');
+            var div3 = document.getElementById('wrapper');
+            var div4 = document.getElementById('experience');
+            div.style.transform = 'translateX(' + (-scrollHeight*2) + 'px)';
         });
 </script>
     <script src="/js/app.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
     VANTA.BIRDS({
     el: ".col-2.abstract",
@@ -177,7 +177,7 @@
     color1: 0x3ff
     })
     </script>
-
+    <script src="js/timeline.min.js"></script>
     <script>
         $('.timeline').timeline();
     </script>
